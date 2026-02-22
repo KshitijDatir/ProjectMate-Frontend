@@ -49,7 +49,7 @@ function Hero() {
               </button>
             </div>
 
-            {/* Stats without avatars */}
+            {/* Stats without avatars
             <div className="flex items-center space-x-8 pt-4">
               <div className="flex items-center space-x-2">
                 <Users size={20} style={{ color: 'var(--primary)' }} />
@@ -69,7 +69,7 @@ function Hero() {
                   <span className="font-bold" style={{ color: 'var(--text)' }}>24/7</span> support
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right - Cube */}
