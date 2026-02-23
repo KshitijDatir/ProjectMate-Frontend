@@ -94,7 +94,7 @@ function DashboardNavbar({ activeSection }) {
               to="/dashboard"
               className={navItemClass(location.pathname === "/dashboard")}
               style={{
-                color: location.pathname === "/dashboard" ? "var(--primary)" : "var(--text)",
+                color: location.pathname === "/dashboard" ? "var(----text)" : "var(--text)",
                 backgroundColor: location.pathname === "/dashboard" ? "var(--secondary)" : "transparent",
               }}
             >
@@ -106,7 +106,7 @@ function DashboardNavbar({ activeSection }) {
               onClick={goToProjects}
               className={navItemClass(isHome && activeSection === "projects")}
               style={{
-                color: isHome && activeSection === "projects" ? "var(--primary)" : "var(--text)",
+                color: isHome && activeSection === "projects" ? "var(--text)" : "var(--text)",
                 backgroundColor: isHome && activeSection === "projects" ? "var(--secondary)" : "transparent",
               }}
             >
@@ -118,7 +118,7 @@ function DashboardNavbar({ activeSection }) {
               onClick={goToInternships}
               className={navItemClass(isHome && activeSection === "internships")}
               style={{
-                color: isHome && activeSection === "internships" ? "var(--primary)" : "var(--text)",
+                color: isHome && activeSection === "internships" ? "var(--text)" : "var(--text)",
                 backgroundColor: isHome && activeSection === "internships" ? "var(--secondary)" : "transparent",
               }}
             >

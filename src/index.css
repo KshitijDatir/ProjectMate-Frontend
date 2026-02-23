@@ -3,101 +3,293 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== THEME VARIABLES ===== */
+/* ===== THEME VARIABLES (Subtle & Readable) ===== */
 :root {
-  /* Scheme1 Light (default) */
-  --primary: #0D5C63;
-  --primary-rgb: 13, 92, 99;
-  --secondary: #A7F3D0;
-  --secondary-rgb: 167, 243, 208;
-  --accent: #C26D3B;
-  --accent-rgb: 194, 109, 59;
-  --text: #1F2937;
-  --text-muted: #4B5563;
-  --background: #F6F1EB;
+  /* Scheme1 Light (Muted Teal & Coral) */
+  --primary: #1A6D75;
+  --primary-rgb: 26, 109, 117;
+  --secondary: #B8E6D6;
+  --secondary-rgb: 184, 230, 214;
+  --accent: #E27D60;
+  --accent-rgb: 226, 125, 96;
+  --text: #1F2A33;
+  --text-muted: #4A5565;
+  --background: #F4F2EF;
   --surface: #FFFFFF;
-  --border: #E5E7EB;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --hologram-gradient: linear-gradient(45deg, transparent, rgba(194, 109, 59, 0.2), transparent);
-  --hologram-glow: 0 0 15px rgba(13, 92, 99, 0.3);
-  --navbar-bg: rgba(255, 255, 255, 0.95);
-  --footer-bg: #1F2937;
-  --footer-text: #F9FAFB;
-  --footer-text-muted: #9CA3AF;
-  --error: #DC2626;
-  --success: #16A34A;
+  --border: #E2E6EA;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(226, 125, 96, 0.15), transparent);
+  --hologram-glow: 0 0 12px rgba(26, 109, 117, 0.25);
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --footer-bg: #2A3843;
+  --footer-text: #F0F4F8;
+  --footer-text-muted: #B0C0CD;
+  --error: #C13B3B;
+  --success: #2A7A4B;
 }
 
 /* Scheme1 Dark */
 [data-theme="scheme1"][data-mode="dark"] {
-  --primary: #1E7A84;
-  --primary-rgb: 30, 122, 132;
-  --secondary: #6BAB90;
-  --secondary-rgb: 107, 171, 144;
-  --accent: #E58C4D;
-  --accent-rgb: 229, 140, 77;
-  --text: #E2E8F0;
-  --text-muted: #A0AEC0;
-  --background: #0A1920;
-  --surface: #1A2F38;
-  --border: #2D3748;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-  --hologram-gradient: linear-gradient(45deg, transparent, rgba(229, 140, 77, 0.3), transparent);
-  --hologram-glow: 0 0 20px rgba(30, 122, 132, 0.6);
-  --navbar-bg: rgba(26, 47, 56, 0.95);
-  --footer-bg: #0A1920;
-  --footer-text: #E2E8F0;
-  --footer-text-muted: #d9dfe6;
-  --error: #F87171;
-  --success: #4ADE80;
+  --primary: #2A828C;
+  --primary-rgb: 42, 130, 140;
+  --secondary: #4F7E6E;
+  --secondary-rgb: 79, 126, 110;
+  --accent: #E8917A;
+  --accent-rgb: 232, 145, 122;
+  --text: #E6EDF3;
+  --text-muted: #A0B3C2;
+  --background: #182229;
+  --surface: #25323C;
+  --border: #384B57;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(232, 145, 122, 0.25), transparent);
+  --hologram-glow: 0 0 18px rgba(42, 130, 140, 0.5);
+  --navbar-bg: rgba(24, 34, 41, 0.92);
+  --footer-bg: #0F181F;
+  --footer-text: #E6EDF3;
+  --footer-text-muted: #A0B3C2;
+  --error: #E06B6B;
+  --success: #4CAF7A;
 }
 
-/* Scheme2 Light */
+/* Scheme2 Light (Soft Slate & Teal) */
 [data-theme="scheme2"][data-mode="light"] {
-  --primary: #1E293B;
-  --primary-rgb: 30, 41, 59;
-  --secondary: #CBD5E1;
-  --secondary-rgb: 203, 213, 225;
-  --accent: #2DD4BF;
-  --accent-rgb: 45, 212, 191;
-  --text: #0F172A;
-  --text-muted: #334155;
-  --background: #F8FAFC;
+  --primary: #2C3A4F;
+  --primary-rgb: 44, 58, 79;
+  --secondary: #D1DCE8;
+  --secondary-rgb: 209, 220, 232;
+  --accent: #38A89D;
+  --accent-rgb: 56, 168, 157;
+  --text: #1D2B3A;
+  --text-muted: #4A5B6B;
+  --background: #F7FAFD;
   --surface: #FFFFFF;
-  --border: #E2E8F0;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --hologram-gradient: linear-gradient(45deg, transparent, rgba(45, 212, 191, 0.2), transparent);
-  --hologram-glow: 0 0 15px rgba(30, 41, 59, 0.3);
-  --navbar-bg: rgba(255, 255, 255, 0.95);
-  --footer-bg: #334155;
-  --footer-text: #F8FAFC;
-  --footer-text-muted: #eaeaea;
-  --error: #DC2626;
-  --success: #16A34A;
+  --border: #E1E8F0;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(56, 168, 157, 0.15), transparent);
+  --hologram-glow: 0 0 12px rgba(44, 58, 79, 0.2);
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --footer-bg: #2C3A4F;
+  --footer-text: #F0F5FA;
+  --footer-text-muted: #A5B9CC;
+  --error: #C13B3B;
+  --success: #2A7A4B;
 }
 
 /* Scheme2 Dark */
 [data-theme="scheme2"][data-mode="dark"] {
-  --primary: #334155;
-  --primary-rgb: 51, 65, 85;
-  --secondary: #94A3B8;
-  --secondary-rgb: 148, 163, 184;
-  --accent: #5EEAD4;
-  --accent-rgb: 94, 234, 212;
-  --text: #F1F5F9;
-  --text-muted: #CBD5E1;
-  --background: #0F172A;
-  --surface: #1E293B;
-  --border: #334155;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-  --hologram-gradient: linear-gradient(45deg, transparent, rgba(94, 234, 212, 0.3), transparent);
-  --hologram-glow: 0 0 20px rgba(51, 65, 85, 0.6);
-  --navbar-bg: rgba(30, 41, 59, 0.95);
-  --footer-bg: #0F172A;
-  --footer-text: #F1F5F9;
-  --footer-text-muted: #94A3B8;
-  --error: #F87171;
-  --success: #4ADE80;
+  --primary: #405B75;
+  --primary-rgb: 64, 91, 117;
+  --secondary: #6F7E91;
+  --secondary-rgb: 111, 126, 145;
+  --accent: #4FC3B7;
+  --accent-rgb: 79, 195, 183;
+  --text: #E9F0F7;
+  --text-muted: #A3B6C9;
+  --background: #1D2A36;
+  --surface: #2D3F50;
+  --border: #405B6F;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(79, 195, 183, 0.25), transparent);
+  --hologram-glow: 0 0 18px rgba(100, 140, 180, 0.5);
+  --navbar-bg: rgba(29, 42, 54, 0.92);
+  --footer-bg: #15222E;
+  --footer-text: #E9F0F7;
+  --footer-text-muted: #A3B6C9;
+  --error: #E06B6B;
+  --success: #4CAF7A;
+}
+
+/* Scheme3 Light (Muted Violet & Gold) */
+[data-theme="scheme3"][data-mode="light"] {
+  --primary: #5A3E85;
+  --primary-rgb: 90, 62, 133;
+  --secondary: #E5D9F2;
+  --secondary-rgb: 229, 217, 242;
+  --accent: #D49C3D;
+  --accent-rgb: 212, 156, 61;
+  --text: #2E2642;
+  --text-muted: #5A4E72;
+  --background: #F8F4FF;
+  --surface: #FFFFFF;
+  --border: #E2D9F0;
+  --shadow: 0 4px 6px -1px rgba(90, 62, 133, 0.1);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(212, 156, 61, 0.15), transparent);
+  --hologram-glow: 0 0 12px rgba(90, 62, 133, 0.25);
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --footer-bg: #3D2E5A;
+  --footer-text: #F2E8FF;
+  --footer-text-muted: #B8A6D9;
+  --error: #C13B3B;
+  --success: #2A7A4B;
+}
+
+/* Scheme3 Dark */
+[data-theme="scheme3"][data-mode="dark"] {
+  --primary: #6E4F9C;
+  --primary-rgb: 110, 79, 156;
+  --secondary: #4F3A72;
+  --secondary-rgb: 79, 58, 114;
+  --accent: #E5B454;
+  --accent-rgb: 229, 180, 84;
+  --text: #F0E6FF;
+  --text-muted: #C2AFE6;
+  --background: #221C33;
+  --surface: #332A4A;
+  --border: #4A3C66;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(229, 180, 84, 0.25), transparent);
+  --hologram-glow: 0 0 18px rgba(140, 110, 200, 0.5);
+  --navbar-bg: rgba(34, 28, 51, 0.92);
+  --footer-bg: #18132A;
+  --footer-text: #F0E6FF;
+  --footer-text-muted: #C2AFE6;
+  --error: #E06B6B;
+  --success: #4CAF7A;
+}
+
+/* Scheme4 Light (Muted Rose & Crimson) */
+[data-theme="scheme4"][data-mode="light"] {
+  --primary: #A3495C;
+  --primary-rgb: 163, 73, 92;
+  --secondary: #F8D7DE;
+  --secondary-rgb: 248, 215, 222;
+  --accent: #C95F6F;
+  --accent-rgb: 201, 95, 111;
+  --text: #3A2C30;
+  --text-muted: #674B52;
+  --background: #FFF7F8;
+  --surface: #FFFFFF;
+  --border: #F0D6DC;
+  --shadow: 0 4px 6px -1px rgba(163, 73, 92, 0.1);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(201, 95, 111, 0.15), transparent);
+  --hologram-glow: 0 0 12px rgba(163, 73, 92, 0.25);
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --footer-bg: #5E3641;
+  --footer-text: #FCE4E9;
+  --footer-text-muted: #D9A7B3;
+  --error: #C13B3B;
+  --success: #2A7A4B;
+}
+
+/* Scheme4 Dark */
+[data-theme="scheme4"][data-mode="dark"] {
+  --primary: #B86B7D;
+  --primary-rgb: 184, 107, 125;
+  --secondary: #7A4D5B;
+  --secondary-rgb: 122, 77, 91;
+  --accent: #E68799;
+  --accent-rgb: 230, 135, 153;
+  --text: #FDE9EE;
+  --text-muted: #DEB6C1;
+  --background: #2E1F26;
+  --surface: #422E38;
+  --border: #614651;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(230, 135, 153, 0.25), transparent);
+  --hologram-glow: 0 0 18px rgba(180, 110, 130, 0.5);
+  --navbar-bg: rgba(46, 31, 38, 0.92);
+  --footer-bg: #23191F;
+  --footer-text: #FDE9EE;
+  --footer-text-muted: #DEB6C1;
+  --error: #E06B6B;
+  --success: #4CAF7A;
+}
+
+/* Scheme5 Light (Muted Emerald & Cyan) */
+[data-theme="scheme5"][data-mode="light"] {
+  --primary: #3C7A6A;
+  --primary-rgb: 60, 122, 106;
+  --secondary: #D3F0E6;
+  --secondary-rgb: 211, 240, 230;
+  --accent: #3A9BAE;
+  --accent-rgb: 58, 155, 174;
+  --text: #1C3A32;
+  --text-muted: #3F6057;
+  --background: #F4FCF9;
+  --surface: #FFFFFF;
+  --border: #D4E9E2;
+  --shadow: 0 4px 6px -1px rgba(60, 122, 106, 0.1);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(58, 155, 174, 0.15), transparent);
+  --hologram-glow: 0 0 12px rgba(60, 122, 106, 0.25);
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --footer-bg: #275A4E;
+  --footer-text: #E0F2EE;
+  --footer-text-muted: #A3CBC2;
+  --error: #C13B3B;
+  --success: #2A7A4B;
+}
+
+/* Scheme5 Dark */
+[data-theme="scheme5"][data-mode="dark"] {
+  --primary: #539F8D;
+  --primary-rgb: 83, 159, 141;
+  --secondary: #3F6F63;
+  --secondary-rgb: 63, 111, 99;
+  --accent: #5FBECE;
+  --accent-rgb: 95, 190, 206;
+  --text: #E2F5F0;
+  --text-muted: #B0D9CF;
+  --background: #1D342F;
+  --surface: #2C4C45;
+  --border: #3E645B;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(95, 190, 206, 0.25), transparent);
+  --hologram-glow: 0 0 18px rgba(100, 170, 150, 0.5);
+  --navbar-bg: rgba(29, 52, 47, 0.92);
+  --footer-bg: #132B26;
+  --footer-text: #E2F5F0;
+  --footer-text-muted: #B0D9CF;
+  --error: #E06B6B;
+  --success: #4CAF7A;
+}
+
+/* Scheme6 Light (Professional Slate & Blue – already subtle) */
+[data-theme="scheme6"][data-mode="light"] {
+  --primary: #1E2B3F;
+  --primary-rgb: 30, 43, 63;
+  --secondary: #E5EAF0;
+  --secondary-rgb: 229, 234, 240;
+  --accent: #3A70B0;
+  --accent-rgb: 58, 112, 176;
+  --text: #0F1A2A;
+  --text-muted: #3F506A;
+  --background: #F9FCFE;
+  --surface: #FFFFFF;
+  --border: #E0E6ED;
+  --shadow: 0 4px 6px -1px rgba(30, 43, 63, 0.08);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(58, 112, 176, 0.1), transparent);
+  --hologram-glow: 0 0 12px rgba(30, 43, 63, 0.15);
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --footer-bg: #1E2B3F;
+  --footer-text: #F0F5FC;
+  --footer-text-muted: #A1B5D0;
+  --error: #C13B3B;
+  --success: #2A7A4B;
+}
+
+/* Scheme6 Dark */
+[data-theme="scheme6"][data-mode="dark"] {
+  --primary: #2C3C54;
+  --primary-rgb: 44, 60, 84;
+  --secondary: #3C4D66;
+  --secondary-rgb: 60, 77, 102;
+  --accent: #5482D0;
+  --accent-rgb: 84, 130, 208;
+  --text: #EDF3FA;
+  --text-muted: #A9BED9;
+  --background: #0E1824;
+  --surface: #1C2A3C;
+  --border: #314159;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --hologram-gradient: linear-gradient(45deg, transparent, rgba(84, 130, 208, 0.2), transparent);
+  --hologram-glow: 0 0 18px rgba(100, 140, 200, 0.4);
+  --navbar-bg: rgba(14, 24, 36, 0.92);
+  --footer-bg: #0A121D;
+  --footer-text: #EDF3FA;
+  --footer-text-muted: #A9BED9;
+  --error: #E06B6B;
+  --success: #4CAF7A;
 }
 
 /* ===== BASE STYLES ===== */
@@ -357,14 +549,14 @@ a {
   z-index: 10;
 }
 
-/* ===== CARD STYLES (Project/Internship cards) ===== */
+/* ===== CARD STYLES – Improved contrast & subtle hover ===== */
 .card-custom {
   position: relative;
   display: block;
   width: 100%;
-  background: linear-gradient(to bottom, var(--secondary), var(--primary));
-  border-radius: 10px;
-  padding: 2em 1.2em;
+  background-color: var(--surface);
+  border-radius: 12px;
+  padding: 1.5rem;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
@@ -379,7 +571,7 @@ a {
   z-index: -1;
   top: -16px;
   right: -16px;
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   height: 32px;
   width: 32px;
   border-radius: 32px;
@@ -395,18 +587,6 @@ a {
 
 .card-custom:hover::before {
   transform: scale(28);
-}
-
-.card-custom:hover .card-title {
-  color: white;
-}
-
-.card-custom:hover .card-desc {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.card-custom:hover .card-footer {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .card-title {
@@ -429,8 +609,31 @@ a {
 .card-footer {
   margin-top: 1em;
   font-size: 0.875em;
-  color: var(--secondary);
+  color: var(--text-muted);
   transition: color 0.3s ease;
+}
+
+.card-custom:hover .card-title,
+.card-custom:hover .card-desc,
+.card-custom:hover .card-footer {
+  color: white;
+}
+
+/* Skill chips */
+.skill-chip {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background-color: var(--secondary);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-custom:hover .skill-chip {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 /* Applied badge */
@@ -572,23 +775,6 @@ a {
 
 .dropdown-item.accent-item::after {
   background: var(--accent);
-}
-
-/* ===== CUSTOM SELECT (filter dropdown) OPTIONS ===== */
-.dropdown-option {
-  position: relative;
-  cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-
-.dropdown-option:hover {
-  background-color: var(--secondary) !important;
-  color: var(--primary) !important;
-}
-
-.dropdown-option:active {
-  background-color: var(--primary) !important;
-  color: white !important;
 }
 
 /* ===== DASHBOARD LAYOUT ===== */
@@ -845,7 +1031,7 @@ a {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-  /* Sidebar panel – slides in from left, hidden by default */
+  /* Sidebar panel – slides in from left */
   .dashboard-sidebar {
     position: fixed;
     left: 0;
@@ -865,18 +1051,14 @@ a {
     transform: translateX(0);
   }
 
-  /* Hide desktop hover expansion on mobile */
   .dashboard-sidebar:hover {
     width: 240px;
-    /* keep width fixed, no expansion */
   }
 
   .sidebar-item-text {
     opacity: 1;
-    /* always visible text on mobile when open */
   }
 
-  /* Sidebar content always visible when open */
   .sidebar-content {
     opacity: 1 !important;
     width: 100%;
@@ -891,15 +1073,14 @@ a {
     padding: 1rem;
   }
 
-  /* Make edit buttons always visible on mobile */
+  /* Edit buttons remain hidden on mobile by default; user can tap to show */
   .request-card .edit-sop-btn,
   .edit-btn-container {
     opacity: 0;
   }
 }
 
-/* ===== DASHBOARD LAYOUT CLEAN ===== */
-
+/* ===== DASHBOARD LAYOUT CLEAN (for consistency) ===== */
 .dashboard-layout {
   display: flex;
   min-height: calc(100vh - 64px);
@@ -907,76 +1088,29 @@ a {
   position: relative;
 }
 
-/* Sidebar – desktop: fixed-width icon bar that expands on hover */
-.dashboard-sidebar {
-  width: 60px;
-  background-color: var(--surface);
-  border-right: 1px solid var(--border);
-  transition: width 0.3s ease;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 40;
-  overflow: hidden;
-}
-
-.dashboard-sidebar:hover {
-  width: 240px;
-}
-
-/* Content takes remaining space */
 .dashboard-content-wrapper {
   flex: 1;
   background-color: var(--background);
   padding: 2rem;
   min-width: 0;
-  /* prevents flex children from overflowing */
 }
 
-/* Inner content aligned like navbar */
 .dashboard-content-inner {
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
 }
 
-/* ===== MOBILE OVERRIDES ===== */
 @media (max-width: 768px) {
-
-  /* Sidebar becomes full-height overlay on mobile */
-  .dashboard-sidebar {
-    position: fixed !important;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 240px !important;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 9998;
-    overflow-y: auto;
-    padding-top: 64px;
-  }
-
-  .dashboard-sidebar:hover {
-    width: 240px !important;
-  }
-
-  .dashboard-sidebar.open {
-    transform: translateX(0);
-  }
-
-  /* Content is full-width; sidebar floats over it */
-  .dashboard-content-wrapper {
-    width: 100%;
-    padding: 1rem;
-    margin-left: 0 !important;
-  }
-
-  /* Layout becomes block so sidebar out-of-flow doesn't leave gap */
   .dashboard-layout {
     display: block;
   }
 
-  /* Cards fill available width */
+  .dashboard-content-wrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+
   .dashboard-content-inner {
     max-width: 100%;
   }

@@ -8,7 +8,7 @@ export const ThemeProvider = ({ children }) => {
   // Get initial theme from localStorage or default to scheme1 light
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
-    return savedTheme || 'scheme1';
+    return savedTheme || 'scheme6';
   });
 
   const [mode, setMode] = useState(() => {
@@ -25,8 +25,14 @@ export const ThemeProvider = ({ children }) => {
     localStorage.setItem('mode', mode);
   }, [theme, mode]);
 
+  const availableThemes = ['scheme6', 'scheme1', 'scheme2', 'scheme3', 'scheme4', 'scheme5'];
+
   const toggleScheme = () => {
-    setTheme(prev => prev === 'scheme1' ? 'scheme2' : 'scheme1');
+    setTheme(prevTheme => {
+      const currentIndex = availableThemes.indexOf(prevTheme);
+      const nextIndex = (currentIndex + 1) % availableThemes.length;
+      return availableThemes[nextIndex];
+    });
   };
 
   const toggleMode = () => {
